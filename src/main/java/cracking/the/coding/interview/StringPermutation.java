@@ -5,17 +5,13 @@ public class StringPermutation {
     public static void main(String[] args) {
 
         StringPermutation stringPermutation = new StringPermutation();
-        stringPermutation.permutation("abc");
+        stringPermutation.permutation("abc", "");
 
     }
 
-    void permutation(String str) {
+    public void permutation(String str, String prefix) {
 
-        permutation(str, "");
-
-    }
-
-    void permutation(String str, String prefix) {
+        System.out.printf( "permutation(%s, %s)\n", str, prefix);
 
         if(str.length()==0)
             System.out.println("Prefix: " + prefix);
@@ -24,7 +20,6 @@ public class StringPermutation {
                 String rem = str.substring(0, i) + str.substring(i+1);
                 permutation(rem, prefix + str.charAt(i));
             }
-
 
     }
 
