@@ -1,4 +1,7 @@
-package cracking.the.coding.interview.data.structures;
+package cracking.the.coding.interview.data.structures.linked.list;
+
+import cracking.the.coding.interview.data.structures.FindResultNode;
+import cracking.the.coding.interview.data.structures.Node;
 
 import java.util.Objects;
 

@@ -1,6 +1,6 @@
-package cracking.the.coding.interview.data.structures;
+package cracking.the.coding.interview.data.structures.linked.list;
 
-public class LinkedListTest {
+public class LinkedListDemo {
 
     public static void main(String[] args) {
 
