@@ -34,8 +34,8 @@ class PreOrderTraversalTest {
 
         this.rootNode = PreOrderTraversalTest.binaryTreeFactory.orderTree(null, "8", null);
 
-        rootNode.setLeftBranch(leftBranch);
-        rootNode.setRightBranch(rightBranch);
+        this.rootNode.setLeftBranch(leftBranch);
+        this.rootNode.setRightBranch(rightBranch);
 
     }
 

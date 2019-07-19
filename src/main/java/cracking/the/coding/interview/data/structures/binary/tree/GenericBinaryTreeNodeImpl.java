@@ -8,12 +8,12 @@ import lombok.Setter;
 @Setter
 @Getter
 @RequiredArgsConstructor
-public class BinaryTreeNodeImpl<T> implements BinaryTreeNode<T> {
+public class GenericBinaryTreeNodeImpl<T> implements BinaryTreeNode<T> {
 
-    private final T nodeData;
+    protected final T nodeData;
 
-    private BinaryTreeNode<T> leftBranch;
+    protected BinaryTreeNode<T> leftBranch;
 
-    private BinaryTreeNode<T> rightBranch;
+    protected BinaryTreeNode<T> rightBranch;
 
 }

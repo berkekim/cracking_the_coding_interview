@@ -4,7 +4,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 
     <groupId>cracking.the.coding.interview</groupId>
-    <artifactId>all.listings</artifactId>
+    <artifactId>cracking.the.coding.interview</artifactId>
     <version>0.0.1</version>
 
     <name>Cracking the Coding Interview</name>

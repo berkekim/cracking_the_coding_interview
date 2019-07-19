@@ -1,24 +1,24 @@
 package cracking.the.coding.interview.data.structures.binary.tree.factory;
 
 import cracking.the.coding.interview.data.structures.BinaryTreeNode;
-import cracking.the.coding.interview.data.structures.binary.tree.BinaryTreeNodeImpl;
+import cracking.the.coding.interview.data.structures.binary.tree.GenericBinaryTreeNodeImpl;
 
 import java.util.Objects;
 
-public class GenericBinaryTreeFactory<T extends BinaryTreeNode<U>, U> extends BinaryTreeFactory<BinaryTreeNode<String>, String> {
+public class GenericBinaryTreeFactory<T extends BinaryTreeNode<U>, U> extends BinaryTreeFactory<BinaryTreeNode<U>, U> {
 
     @Override
-    protected BinaryTreeNode<String> produceTree(String leftBranchData, String currentNodeData, String rightBranchData) {
+    protected BinaryTreeNode<U> produceTree(U leftBranchData, U currentNodeData, U rightBranchData) {
 
         checkEntranceCondition(leftBranchData, currentNodeData, rightBranchData);
 
-        BinaryTreeNodeImpl<String> rootNode = new BinaryTreeNodeImpl<>(currentNodeData);
+        GenericBinaryTreeNodeImpl<U> rootNode = new GenericBinaryTreeNodeImpl<>(currentNodeData);
 
         if (!Objects.isNull(leftBranchData))
-            rootNode.setLeftBranch(new BinaryTreeNodeImpl<>(leftBranchData));
+            rootNode.setLeftBranch(new GenericBinaryTreeNodeImpl<>(leftBranchData));
 
         if (!Objects.isNull(rightBranchData))
-            rootNode.setRightBranch(new BinaryTreeNodeImpl<>(rightBranchData));
+            rootNode.setRightBranch(new GenericBinaryTreeNodeImpl<>(rightBranchData));
 
         return rootNode;
 

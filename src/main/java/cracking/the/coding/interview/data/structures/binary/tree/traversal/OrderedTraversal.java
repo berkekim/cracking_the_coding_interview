@@ -26,7 +26,7 @@ public abstract class OrderedTraversal<T extends TreeNode> implements Traversabl
 
     }
 
-    protected String getTraversalRecords() {
+    public String getTraversalRecords() {
 
         return traversalRecords.toString().trim();
 
